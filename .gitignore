@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+__pycache__/
+geckodriver.log
+browser/.DS_Store
+browser/*.pyc
+browser/__pycache__/
+browser/geckodriver.log
