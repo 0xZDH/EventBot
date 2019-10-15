@@ -23,7 +23,7 @@ if __name__ == '__main__':
         parser.add_argument("--wait", type=int, help="Seconds the browser should wait for DOM to load")
         args = parser.parse_args()
 
-        url    = args.url
+        url    = args.url.split('?')[0]
         url_id = IFRAME_ID.format(ID=url.split('-')[-1])
         wait   = 2 if not args.wait else args.wait
 
